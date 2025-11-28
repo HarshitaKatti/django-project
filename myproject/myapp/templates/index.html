@@ -6,7 +6,177 @@
     <title>Document</title>
 </head>
 <body>
-    <p style="text-align: center;">Cyclone Ditwah LIVE: Intense rainfall expected in Tamil Nadu till weekend
-Cyclonic storm Ditwah over southwest Bay of Bengal and adjoining Sri Lanka coast and the depression (remnant of cyclonic storm ‘Senyar’) over the Strait of Malacca are expected to bring rains</p>
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leaf & Ledger — Landing Page</title>
+
+<style>
+    body {
+        margin:0;
+        background:#0f1724;
+        color:#e6eef6;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+
+    /* Header */
+    header {
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        background:#0b1220;
+        padding:16px 25px;
+    }
+
+    .logo {
+        display:flex;
+        align-items:center;
+        gap:10px;
+    }
+
+    .logo svg {
+        height:45px;
+    }
+
+    header h1 {
+        margin:0;
+        font-size:22px;
+    }
+
+    /* Hero Section */
+    .hero {
+        text-align:center;
+        padding:40px 20px;
+    }
+
+    .hero h2 {
+        font-size:32px;
+        margin-bottom:10px;
+    }
+
+    .hero p {
+        color:#9aa4b2;
+        margin-bottom:25px;
+    }
+
+    .btns {
+        display:flex;
+        justify-content:center;
+        gap:20px;
+        margin-bottom:30px;
+    }
+
+    .btns a {
+        padding:12px 20px;
+        background:#f6a11e;
+        color:#000;
+        text-decoration:none;
+        font-weight:bold;
+        border-radius:8px;
+    }
+
+    /* Books Section */
+    .books {
+        display:grid;
+        grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+        gap:18px;
+        max-width:1000px;
+        margin:0 auto 40px;
+        padding:0 20px;
+    }
+
+    .book {
+        background:#0b1220;
+        padding:12px;
+        border-radius:10px;
+    }
+
+    .book img {
+        width:100%;
+        border-radius:8px;
+    }
+
+    .book h3 {
+        font-size:18px;
+        margin:10px 0 4px;
+    }
+
+    .book p {
+        color:#9aa4b2;
+        margin:0;
+        font-size:14px;
+    }
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <div display="flex" >
+    <div class="logo">
+        <svg viewBox="0 0 64 64" fill="none">
+            <rect x="2" y="10" width="40" height="44" rx="4" fill="#07243a"/>
+            <path d="M44 14c4 0 10 6 10 12s-6 12-10 12" stroke="#f6a11e" stroke-width="3"/>
+            <path d="M12 20c6-6 16-6 22 0" stroke="#7fe082" stroke-width="2"/>
+        </svg>
+        <h1>Leaf & Ledger</h1>
+    </div>
+    <div>
+        <ul>
+            <li><a href="{% url 'contact'%}">contact</a></li>
+            <li><a href="{% url 'about'%}">about</a></li>
+        </ul>
+    </div>
+    </div>
+</header>
+
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <h2>Welcome to Leaf & Ledger</h2>
+    <p>Discover your next great read. Thousands of books at your fingertips.</p>
+
+    <div class="btns">
+        <a href="{% url 'register' %}" >Register</a>
+        <a href="{% url 'login'%}">Login</a>
+    </div>
+</section>
+
+
+<!-- BOOKS DISPLAY -->
+
+<section class="books">
+
+    <div class="book">
+        <img src="https://picsum.photos/200/300?random=1">
+        <h3>The Midnight Library</h3>
+        <p>Matt Haig</p>
+    </div>
+
+    <div class="book">
+        <img src="https://picsum.photos/200/300?random=2">
+        <h3>Atomic Habits</h3>
+        <p>James Clear</p>
+    </div>
+
+    <div class="book">
+        <img src="https://picsum.photos/200/300?random=3">
+        <h3>Shoe Dog</h3>
+        <p>Phil Knight</p>
+    </div>
+
+    <div class="book">
+        <img src="https://picsum.photos/200/300?random=4">
+        <h3>The Alchemist</h3>
+        <p>Paulo Coelho</p>
+    </div>
+
+</section>
+
+</body>
+</html>
 </body>
 </html>
